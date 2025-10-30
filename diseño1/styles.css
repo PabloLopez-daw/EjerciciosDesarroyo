@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Quantum";
+  src: url("assests/fonts/Quantum.otf"), url("assests/fonts/Quantum.woff2"),
+    url("assests/fonts/Quantum.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  background-color: black;
+}
+
+.hero {
+  background-color: black;
+  height: 100%;
+  background-image: url("assests/img/herofoto.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  height: 100px;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+  font-size: 1.3rem;
+  font-family: "Quantum", sans-serif;
+}
+
+nav {
+  flex: 1;
+  padding-left: 20%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 8rem;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.hero-content {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello {
+  padding-right: 10rem;
+  padding-bottom: 8rem;
+}
+
+.hello h1 {
+  margin: 0;
+  font-size: 8rem;
+}
+.hello p {
+  margin: 0;
+  margin-top: -1.5rem;
+  font-size: 1.1em;
+  padding-left: 0.4em;
+}
+
+.bottom-down {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+}
+
+.scroll-down {
+  width: 40px;
+  height: 160px;
+
+  border: solid red 1px;
+
+  margin-left: 50%;
+}
+
+/*------------------------------------------------------------------*/
+
+.freelance {
+  height: 100vh;
+
+  background-image: url("assests/img/foto2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.freelance-content {
+  flex: 0.5;
+  height: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
+  padding: 0 4rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+}
+
+.social-media li {
+  flex: 0 0 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
+.social-media li a {
+  width: 40px;
+  height: 40px;
+}
+
+.freelance-content p {
+  font-size: 1.2rem;
+}
+.freelance-content h3 span {
+  text-transform: uppercase;
+}
+.freelance-content h3 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.line {
+  width: 122px;
+  border: 1px solid white;
+  margin: 2rem 0 1rem 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+.btn-secundary {
+  border: 1px solid #b2a31f;
+  color: white;
+}
+.btn-secundary:hover {
+  background-color: #b2a31f;
+  color: black;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------------------*/
+.cards {
+  background-color: rgb(30, 30, 30);
+}
+.cards ul {
+  display: flex;
+  list-style: none;
+}
+
+.cards ul li {
+  flex: 1;
+  padding: 3rem;
+  height: 360px;
+}
+.cards ul li:nth-child(3) {
+  background-image: url("assests/img/foto3.png");
+  background-size: cover;
+}
+
+.cards ul li p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.cards ul li h5 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/*----------------------------------------------------About-----------*/
+
+.about-3 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  flex: 1 0;
+  padding: 6rem;
+}
+
+.imagen {
+  flex: 1 0;
+  padding: 4rem;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-top: 4rem;
+}
+
+.parrafo {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+}
+/*----------------------------------------------------Porfolio-----------*/
+
+.porfolio {
+  height: 100vh;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+}
+
+.porfolio-header {
+  flex: 1;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel {
+  flex: 3;
+  display: flex;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+  position: relative;
+}
+.porfolio-header h1 {
+  text-transform: uppercase;
+}
+.fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fotos img {
+  width: 100%;
+  flex: 1 0 30%;
+  object-fit: contain;
+}
+
+.column-1,
+.column-2,
+.column-3 {
+  flex: 1;
+}
+
+.column-1 h4,
+.column-2 h4,
+.column-3 h4 {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.band {
+  background-color: black;
+  padding: 1rem 3rem;
+  position: relative;
+}
+
+.nav-band {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  width: 30px;
+  height: 90px;
+  background-color: grey;
+}
+
+.nav-carrusel {
+  width: 90px;
+  height: 30px;
+  background-color: grey;
+  right: 6rem;
+  bottom: 2rem;
+  position: absolute;
+}
+
+/*----------------------------------------------------About-----------*/
+
+.form {
+  border: 1px solid white;
+  height: 60vh;
+
+  display: flex;
+  margin-top: 4rem;
+}
+
+.geo {
+  border: 1px solid red;
+  height: 60vh;
+}
+
+.geo iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.white-space {
+  flex: 1;
+}
+
+.formulario {
+  flex: 2;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.address {
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.address p {
+  margin-bottom: 1rem;
+}
+
+.address p:nth-child(4) {
+  margin-top: 4rem;
+}
+
+.direccion {
+  flex: 2;
+  padding: 2rem;
+}
+
+.section-name {
+  flex: 1;
+
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-name h1 {
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e9cf44;
+  background: transparent;
+  font-family: Montserrat;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  border: 1px solid #e9cf44;
+  padding: 1rem;
+  font-family: Montserrat;
+}
+
+.enviar {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.policy {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.policy label {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.submit {
+  flex: 1;
+  border: 1px solid white;
+  color: black;
+  background-color: #e9cf44;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+  background-color: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #e9cf44;
+}
+/*----------------------------------------------------About-----------*/
+
+.footer-content {
+  background-image: url("assests/img/foto4.png");
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  padding: 2rem;
+
+  diplay: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.branding {
+  flex: 3;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2 rem;
+}
+
+.branding h1 {
+  font-family: "Quantum", sans-serif;
+  text-shadow: 1px 1px 1px black;
+}
+
+.motto {
+  font-size: 1.8rem;
+}
+
+.subfooter {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
