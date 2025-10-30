@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Manjari:wght@100;400;700&family=Monoton&display=swap');
+
 :root {
     --azul: #080819;
     --white: #ffffff;
@@ -23,6 +25,8 @@ html {
     background-color: white;
 }
 
+
+
 header {
     background-color: var(--azul);
     color: var(--white);
@@ -31,4 +35,79 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    justify-content: center;
+
+    nav {
+
+        ul {
+            text-align: center;
+
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            li {
+                padding: 5rem;
+
+                a {
+
+                    text-decoration: none;
+                    color: var(--white);
+                    font-size: 1.2rem;
+                    font-weight: 400;
+
+                }
+            }
+        }
+    }
+}
+
+.hero-content {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: var(--azul);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+    .morad {
+        width: 45%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: 8rem;
+
+        h1 {
+            font-family: 'Monoton';
+            font-weight: 100;
+            font-size: 128px;
+        }
+
+        p {
+            text-align: left;
+            padding-left: 1rem;
+            font-weight: 350;
+        }
+    }
+
+    .photo {
+        width: 50%;
+        padding-left: 10rem;
+
+        img {
+            width: 700px;
+            height: 890px;
+        }
+    }
+
+    .icons {
+        width: 5%;
+
+    }
+
+
 }
