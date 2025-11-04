@@ -25,6 +25,14 @@ html {
     background-color: white;
 }
 
+.btn {
+    background-color: transparent;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+
+
+}
 
 
 header {
@@ -65,7 +73,7 @@ header {
 
 .hero-content {
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     background-color: var(--azul);
     display: flex;
     text-align: center;
@@ -97,7 +105,7 @@ header {
     .photo {
         width: 50%;
         padding-left: 10rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
 
         img {
             width: 700px;
@@ -230,12 +238,13 @@ header {
         background-repeat: no-repeat;
         background-position: center top;
         padding: 6rem;
+
         .imgalbum {
             text-align: center;
             margin-bottom: 9rem;
 
             img {
-                
+
                 width: 1035px;
                 height: 1035px;
                 border-radius: 10px;
@@ -269,12 +278,13 @@ header {
         background-color: var(--white);
         padding: 5rem;
         color: var(--azul);
+
         h3 {
             text-align: center;
             font-size: 56px;
         }
 
-        .album2{
+        .album2 {
             display: flex;
             flex-direction: column;
             gap: 3rem;
@@ -282,28 +292,39 @@ header {
             justify-content: center;
 
             .fila1 {
-                
+                margin-top: 2rem;
+                width: 100%;
                 display: flex;
                 gap: 3rem;
                 justify-content: center;
-                .imgalbum{
+
+                .imgalbum {
                     border: 2px solid white;
                     flex: 1;
                     text-align: center;
-                    margin: 8rem;
+                    margin: 1rem;
+
+                    h4 {
+                        margin: 1rem;
+                    }
                 }
             }
 
             .fila2 {
-                
+                width: 100%;
                 display: flex;
                 gap: 3rem;
                 justify-content: center;
-                .imgalbum{
+
+                .imgalbum {
                     border: 2px solid white;
                     flex: 1;
                     text-align: center;
-                    margin: 8rem;
+                    margin: 1rem;
+
+                    h4 {
+                        margin: 1rem;
+                    }
                 }
             }
         }
@@ -316,34 +337,144 @@ header {
     padding: 5rem;
     color: var(--white);
 
+    h2 {
+        font-size: 64px;
+
+    }
+
     .tour-content {
         margin: 4rem 0rem 4rem 0rem;
         display: flex;
         gap: 3rem;
-        
+
         .cards {
             flex: 1;
 
-            .sect {              
+            .sect {
                 display: flex;
                 gap: 4rem;
                 margin: 2rem 1rem 2rem 1rem;
                 padding: 1rem;
                 border: 2px solid var(--white);
                 border-radius: 15px;
+
                 .text {
-                    flex:1;
+                    flex: 1;
                 }
-                .botn {
-                    flex:1;
+
+                .bton {
+                    flex: 1;
+                    text-align: right;
+                    align-items: center;
+
+                    .btn-tour {
+                        color: var(--white);
+                        border: 1px solid var(--white);
+                    }
+
                 }
             }
         }
 
         .photo2 {
-            flex:1;
+            flex: 1;
 
         }
     }
 
+}
+
+.merchan {
+    width: 100%;
+    background-color: var(--white);
+    padding: 5rem;
+    color: var(--azul);
+
+    h2 {
+        font-size: 64px;
+
+    }
+
+    .mercha-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 6rem;
+
+        .cont1 {
+            display: flex;
+            gap: 11rem;
+
+            .card {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex: 3;
+                border: 1px solid var(--azul);
+                border-radius: 10px;
+
+                img {
+                    width: 400px;
+                    height: 365;
+                }
+
+                .text {
+                    text-align: center;
+                    margin: 1.5rem;
+
+                    h5 {
+                        margin-bottom: .5rem;
+                    }
+                }
+
+                .bton {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .cont2 {
+            display: flex;
+            gap: 10rem;
+
+            .card {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                flex: 3;
+                border: 1px solid var(--azul);
+                border-radius: 10px;
+
+                img {
+                    width: 400px;
+                    height: 365;
+                }
+
+                .text {
+                    text-align: center;
+                    margin: 1.5rem;
+
+                    h5 {
+                        margin-bottom: .5rem;
+                    }
+                }
+
+                .bton {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.video {
+    width: 100%;
+    background-color: var(--azul);
+    padding: 5rem;
+    color: var(--white);
+    align-items: center;
+    text-align: center;
 }
