@@ -1,0 +1,194 @@
+.team-hero {
+  height: 60vh;
+  background-color: var(--dark);
+  background-image: url('assets/img/team.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .team-title {
+    font-family: 'Cinzel', serif;
+    font-size: 5rem;
+    color: var(--light);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 5rem;
+  }
+}
+
+.team-content-wrapper {
+  background-color: #1a1a1a;
+  background-image: url('assets/img/fondo.png');
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.chefs-section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .chefs-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 3rem;
+  }
+
+  .chef-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 250px;
+
+    .chef-image-container {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 2px solid #d4af37;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .chef-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #333;
+        background-size: cover;
+        background-position: center;
+
+        &.chef-1 {
+          background-image: url('assets/img/chef1.png');
+        }
+
+        &.chef-2 {
+          background-image: url('assets/img/chef2.png');
+        }
+
+        &.chef-3 {
+          background-image: url('assets/img/chef3.png');
+        }
+
+        &.chef-4 {
+          background-image: url('assets/img/chef4.png');
+        }
+
+        &.chef-5 {
+          background-image: url('assets/img/chef5.png');
+        }
+
+        &.chef-6 {
+          background-image: url('assets/img/chef6.png');
+        }
+      }
+    }
+
+    h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--light);
+      margin-top: 0.5rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 20px;
+        height: 20px;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.waiters-section {
+  width: 100%;
+  max-width: 1200px;
+
+  .waiters-container {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .waiters-image {
+      width: 100%;
+      height: 300px;
+      background-color: #333;
+      background-image: url('assets/img/teamwork.png');
+      background-size: contain;
+      background-position: center;
+      border-radius: 4px;
+    }
+
+    .waiters-content {
+      text-align: center;
+      max-width: 800px;
+
+      h2 {
+        font-family: 'Cinzel', serif;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        color: var(--light);
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-hero .team-title {
+    font-size: 3rem;
+  }
+
+  .chefs-section .chefs-row {
+    padding: 1.5rem;
+    gap: 3rem;
+  }
+
+  .waiters-section .waiters-container {
+    padding: 1rem;
+
+    .waiters-image {
+      height: 200px;
+    }
+  }
+}
