@@ -1,7 +1,6 @@
 .portada-menu {
     height: 50vh;
     background-image: url('assets/img/menu.jpg');
-    /* Usando hero.png como predeterminado seguro */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -9,7 +8,6 @@
     align-items: center;
     position: relative;
     margin-top: 80px;
-    /* Espacio para cabecera fija */
 
     &::before {
         content: '';
@@ -189,7 +187,6 @@
         flex: 1;
         height: 500px;
         background-image: url('assets/img/vinos2.jpg');
-        /* Marcador de posición para imagen de vino */
         background-size: cover;
         background-position: center;
         border-radius: 2px;
@@ -247,7 +244,6 @@
     }
 }
 
-/* Responsive */
 @media screen and (max-width: 1024px) {
     .seccion-tarjetas-menu {
         flex-direction: column;
@@ -262,7 +258,6 @@
             width: 100%;
             height: 400px;
             order: -1;
-            /* Imagen arriba */
         }
     }
 }
