@@ -15,17 +15,26 @@
             <div class="marca">
                 <div class="nombre-marca">HARIZON</div>
             </div>
-            <nav>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-label">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <nav class="nav-contenedor">
                 <ul class="nav-principal">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="team.html">TEAM</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="team.html">The Team</a></li>
+                    <li class="menu-item"><a href="menu.html">Menu</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="contenedor-reserva">
+                    <button class="boton-reserva">Reserve Now</button>
+                </div>
             </nav>
-            <div class="contenedor-reserva">
-                <button class="boton-reserva">RESERVE NOW</button>
-            </div>
         </header>
 
         <section class="portada-equipo">
@@ -126,64 +135,79 @@
 
         <footer>
             <div class="contenedor-pie">
-                <div class="pie-izquierda">
+
+                <div class="columna-pie marca-bloque">
                     <div class="marca-pie">
                         <h3>HARIZON</h3>
-                        <p>FINE DINING</p>
+                        <p class="slogan-pie">Elegance in every flavor.</p>
                     </div>
-                </div>
+                    <p class="desc-pie">An immersive culinary journey honoring the roots of nature and the art of fine
+                        dining.</p>
 
-                <div class="pie-centro">
                     <div class="social-pie">
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/instagram.svg" alt="Instagram">
-                        </a>
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/whatsapp.svg" alt="WhatsApp">
-                        </a>
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/twitter.svg" alt="Twitter">
-                        </a>
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/facebook.svg" alt="Facebook">
-                        </a>
-                    </div>
-
-                    <div class="info-pie">
-                        <div class="item-info">
-                            <img src="assets/img/Phone.svg" alt="Phone">
-                            <span>+34 667 20 20 66</span>
-                        </div>
-                        <div class="item-info">
-                            <img src="assets/img/Droplet.svg" alt="Location">
-                            <span>Galán de Noche 18</span>
-                        </div>
-                        <div class="item-info">
-                            <img src="assets/img/Mail.svg" alt="Email">
-                            <span>horizon@gmail.com</span>
-                        </div>
-                        <div class="item-info">
-                            <img src="assets/img/Calendar.svg" alt="Calendar">
-                            <span>Tuesday - Sunday</span>
-                        </div>
+                        <a href="#" class="icono-social"><img src="assets/img/instagram.svg" alt="Instagram"></a>
+                        <a href="#" class="icono-social"><img src="assets/img/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="icono-social"><img src="assets/img/twitter.svg" alt="Twitter"></a>
                     </div>
                 </div>
 
-                <div class="pie-derecha">
-                    <nav class="nav-pie">
-                        <a href="index.html">HOME</a>
-                        <a href="team.html">TEAM</a>
-                        <a href="menu.html">MENU</a>
-                        <a href="contact.html">CONTACT</a>
-                    </nav>
+                <div class="columna-pie contacto-bloque">
+                    <h4>Visit Us</h4>
+                    <div class="info-lista">
+                        <div class="item-info">
+                            <span class="label">Location:</span>
+                            <span class="valor">Galán de Noche 18, Madrid</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="label">Reservations:</span>
+                            <span class="valor">+34 667 20 20 66</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="label">Email:</span>
+                            <span class="valor">bookings@horizon.com</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="link-mapa">Get Directions &rarr;</a>
                 </div>
+
+                <div class="columna-pie horario-bloque">
+                    <h4>Opening Hours</h4>
+                    <ul class="lista-horario">
+                        <li>
+                            <span class="dia">Mon - Thu</span>
+                            <span class="hora">18:00 - 23:00</span>
+                        </li>
+                        <li>
+                            <span class="dia">Fri - Sat</span>
+                            <span class="hora">17:00 - 01:00</span>
+                        </li>
+                        <li>
+                            <span class="dia">Sunday</span>
+                            <span class="hora">Brunch 11:00 - 16:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie newsletter-bloque">
+                    <h4>Join our Circle</h4>
+                    <p>Receive exclusive invitations to tasting events and seasonal menu updates.</p>
+
+                    <form class="form-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
             </div>
 
             <div class="fondo-pie">
                 <div class="contenido-fondo-pie">
-                    <p>© 2025 Harizon — Fine Dining</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms and Conditions</p>
+                    <p>© 2025 Horizon — Fine Dining.</p>
+                    <div class="links-legales">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookies</a>
+                    </div>
                 </div>
             </div>
         </footer>

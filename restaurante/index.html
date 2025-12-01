@@ -4,46 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizon Restaurant</title>
+    <title>Horizon — Fine Dining Experience</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="contenedor-principal">
+
         <div class="portada">
             <header>
                 <div class="marca">
                     <div class="nombre-marca">HARIZON</div>
                 </div>
-                <nav>
+
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+                <label for="menu-toggle" class="menu-label">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+                <nav class="nav-contenedor">
                     <ul class="nav-principal">
-                        <li class="menu-item"><a href="index.html">HOME</a></li>
-                        <li class="menu-item"><a href="team.html">TEAM</a></li>
-                        <li class="menu-item"><a href="menu.html">MENU</a></li>
-                        <li class="menu-item"><a href="contact.html">CONTACT</a></li>
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="team.html">The Team</a></li>
+                        <li class="menu-item"><a href="menu.html">Menu</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="contenedor-reserva">
+                        <button class="boton-reserva">Reserve Now</button>
+                    </div>
                 </nav>
-                <div class="contenedor-reserva">
-                    <button class="boton-reserva">RESERVE NOW</button>
-                </div>
             </header>
+
             <div class="contenido-portada">
-                <div class="texto-portada">
+                <div class="texto-portada animate-fade-up">
                     <h1 class="titulo-portada">HORIZON</h1>
-                    <p class="subtitulo-portada">FINE DINING CULINARY EXPERIENCE</p>
+                    <p class="subtitulo-portada">Fine Dining Culinary Experience</p>
                 </div>
             </div>
         </div>
 
         <section class="historia">
-            <div class="contenido-historia">
+            <div class="overlay-oscura"></div>
+            <div class="contenido-historia animate-on-scroll">
                 <h2>Our History</h2>
                 <p>Our restaurant was born from a desire to share authentic flavors and meaningful moments. What began
                     as a small family dream grew through a passion for good food and hospitality, serving every guest as
                     if they were home.</p>
                 <p>With dedication, fresh ingredients, and recipes carrying tradition, we have grown alongside our
-                    customers, now part of our extended family. Here, every dish celebrates our roots, and every visit
-                    is an invitation to a unique experience.</p>
+                    customers, now part of our extended family.</p>
             </div>
         </section>
 
@@ -53,101 +64,142 @@
                 <p>At Horizon, cooking is more than technique; it is a tribute to heritage, nature, and emotion.
                 </p>
                 <p>We source fresh, seasonal ingredients from trusted local producers, turning every dish into the
-                    "author of the land". Our recipes honor tradition while embracing creativity, blending innovation
-                    with timeless flavors.</p>
-                <p>From the first aromas to the last bite, we create experiences that nourish both body and soul. Every
-                    dish is a gesture of care, every detail a reflection of our culinary values: authenticity, respect,
-                    and joy.</p>
+                    "author of the land". Our recipes honor tradition while embracing creativity.</p>
+                <p>From the first aromas to the last bite, we create experiences that nourish both body and soul.</p>
             </div>
-            <div class="imagen-filosofia">
+            <div class="imagen-filosofia"></div>
+        </section>
+
+        <section class="origen">
+            <div class="imagen-origen"></div>
+            <div class="texto-origen">
+                <h2>The Origin</h2>
+                <p>True flavor begins before the kitchen. We honor the "Author of the Land" by partnering with
+                    small-scale artisans who share our respect for nature's cycles.</p>
+                <p>Every ingredient tells a story of patience and dedication. From the morning dew on our greens to the
+                    pristine waters of our coast.</p>
+
+                <ul class="lista-origen">
+                    <li><span class="icono-lista"></span> Local Farmers</li>
+                    <li><span class="icono-lista"></span> Sustainable Catch</li>
+                    <li><span class="icono-lista"></span> Organic Greens</li>
+                </ul>
             </div>
+        </section>
+
+        <section class="bodega">
+            <div class="texto-bodega">
+                <h2>The Cellar</h2>
+                <p>A journey through the world's finest vineyards. Our sommelier has curated a collection that bridges
+                    the gap between classic heritage and modern winemaking.</p>
+                <p>Whether you prefer a robust vintage or a delicate white, our cellar is designed to elevate every
+                    nuance of our tasting menu.</p>
+                <a href="#" class="boton-vino">View Wine List</a>
+            </div>
+            <div class="imagen-bodega"></div>
         </section>
 
         <section class="galeria">
             <div class="cuadricula-galeria">
                 <div class="item-galeria galeria-1">
+                    <div class="galeria-hover"><span>Interior</span></div>
                 </div>
                 <div class="item-galeria galeria-2">
+                    <div class="galeria-hover"><span>Signature Dish</span></div>
                 </div>
                 <div class="item-galeria galeria-3">
+                    <div class="galeria-hover"><span>Atmosphere</span></div>
                 </div>
             </div>
         </section>
 
         <section class="eventos">
-            <div class="imagen-eventos">
-            </div>
+            <div class="imagen-eventos"></div>
             <div class="contenido-eventos">
                 <h2>Special Events</h2>
                 <p>At Horizon, family is at the heart of everything we do.</p>
                 <p>Over the years, we have had the honor of hosting birthdays, anniversaries, weddings, and moments,
                     each a reflection of love, tradition, and togetherness.</p>
                 <p>Our warm hospitality and cuisine allow you to share past stories, photo exchanges, and memories that
-                    become precise at the table. Whether it's an intimate dinner or a joyful gathering, we craft every
-                    detail to make your celebration unforgettable.</p>
+                    become precise at the table.</p>
             </div>
         </section>
+
         <footer>
             <div class="contenedor-pie">
-                <div class="pie-izquierda">
+
+                <div class="columna-pie marca-bloque">
                     <div class="marca-pie">
                         <h3>HARIZON</h3>
-                        <p>FINE DINING</p>
+                        <p class="slogan-pie">Elegance in every flavor.</p>
                     </div>
-                </div>
+                    <p class="desc-pie">An immersive culinary journey honoring the roots of nature and the art of fine
+                        dining.</p>
 
-                <div class="pie-centro">
                     <div class="social-pie">
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/instagram.svg" alt="Instagram">
-                        </a>
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/whatsapp.svg" alt="WhatsApp">
-                        </a>
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/twitter.svg" alt="Twitter">
-                        </a>
-                        <a href="#" class="icono-social">
-                            <img src="assets/img/facebook.svg" alt="Facebook">
-                        </a>
-                    </div>
-
-                    <div class="info-pie">
-                        <div class="item-info">
-                            <img src="assets/img/Phone.svg" alt="Phone">
-                            <span>+34 667 20 20 66</span>
-                        </div>
-                        <div class="item-info">
-                            <img src="assets/img/Droplet.svg" alt="Location">
-                            <span>Galán de Noche 18</span>
-                        </div>
-                        <div class="item-info">
-                            <img src="assets/img/Mail.svg" alt="Email">
-                            <span>horizon@gmail.com</span>
-                        </div>
-                        <div class="item-info">
-                            <img src="assets/img/Calendar.svg" alt="Calendar">
-                            <span>Martes - Domingos</span>
-                        </div>
+                        <a href="#" class="icono-social"><img src="assets/img/instagram.svg" alt="Instagram"></a>
+                        <a href="#" class="icono-social"><img src="assets/img/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="icono-social"><img src="assets/img/twitter.svg" alt="Twitter"></a>
                     </div>
                 </div>
 
-                <div class="pie-derecha">
-                    <nav class="nav-pie">
-                        <a href="index.html">HOME</a>
-                        <a href="team.html">TEAM</a>
-                        <a href="menu.html">MENU</a>
-                        <a href="contact.html">CONTACT</a>
-                    </nav>
+                <div class="columna-pie contacto-bloque">
+                    <h4>Visit Us</h4>
+                    <div class="info-lista">
+                        <div class="item-info">
+                            <span class="label">Location:</span>
+                            <span class="valor">Galán de Noche 18, Madrid</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="label">Reservations:</span>
+                            <span class="valor">+34 667 20 20 66</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="label">Email:</span>
+                            <span class="valor">bookings@horizon.com</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="link-mapa">Get Directions &rarr;</a>
                 </div>
+
+                <div class="columna-pie horario-bloque">
+                    <h4>Opening Hours</h4>
+                    <ul class="lista-horario">
+                        <li>
+                            <span class="dia">Mon - Thu</span>
+                            <span class="hora">18:00 - 23:00</span>
+                        </li>
+                        <li>
+                            <span class="dia">Fri - Sat</span>
+                            <span class="hora">17:00 - 01:00</span>
+                        </li>
+                        <li>
+                            <span class="dia">Sunday</span>
+                            <span class="hora">Brunch 11:00 - 16:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="columna-pie newsletter-bloque">
+                    <h4>Join our Circle</h4>
+                    <p>Receive exclusive invitations to tasting events and seasonal menu updates.</p>
+
+                    <form class="form-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
             </div>
 
             <div class="fondo-pie">
                 <div class="contenido-fondo-pie">
-                    <p>© 2025 Harizon — Fine Dining</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms and Conditions</p>
-
+                    <p>© 2025 Horizon — Fine Dining.</p>
+                    <div class="links-legales">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookies</a>
+                    </div>
                 </div>
             </div>
         </footer>

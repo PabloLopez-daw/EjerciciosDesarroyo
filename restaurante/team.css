@@ -106,27 +106,27 @@
         transition: filter 0.3s ease;
 
         &.chef-1 {
-          background-image: url('assets/img/chef1.png');
+          background-image: url('assets/img/chef1.jpg');
         }
 
         &.chef-2 {
-          background-image: url('assets/img/chef2.png');
+          background-image: url('assets/img/chef2.jpg');
         }
 
         &.chef-3 {
-          background-image: url('assets/img/chef3.png');
+          background-image: url('assets/img/chef3.jpg');
         }
 
         &.chef-4 {
-          background-image: url('assets/img/chef4.png');
+          background-image: url('assets/img/chef4.jpg');
         }
 
         &.chef-5 {
-          background-image: url('assets/img/chef5.png');
+          background-image: url('assets/img/chef5.jpg');
         }
 
         &.chef-6 {
-          background-image: url('assets/img/chef6.png');
+          background-image: url('assets/img/chef6.jpg');
         }
       }
     }
@@ -233,7 +233,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+
   .portada-equipo .titulo-equipo {
     font-size: 3rem;
   }
