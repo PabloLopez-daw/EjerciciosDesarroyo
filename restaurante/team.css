@@ -1,77 +1,109 @@
-.team-hero {
-  height: 60vh;
-  background-color: var(--dark);
-  background-image: url('assets/img/team.png');
+/* Portada Equipo */
+.portada-equipo {
+  height: 50vh;
+  background-image: url('assets/img/hero.png');
+  /* Usando hero.png como predeterminado seguro */
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 80px;
+  /* Espacio para cabecera fija */
 
-  .team-title {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .titulo-equipo {
     font-family: 'Cinzel', serif;
     font-size: 5rem;
     color: var(--light);
-    letter-spacing: 10px;
+    z-index: 1;
+    letter-spacing: 8px;
     text-transform: uppercase;
     font-weight: 400;
-    margin-top: 5rem;
   }
 }
 
-.team-content-wrapper {
-  background-color: #1a1a1a;
-  background-image: url('assets/img/fondo.png');
-  padding: 4rem 2rem;
+/* Contenedor Contenido Equipo */
+.contenedor-contenido-equipo {
+  background-color: var(--dark-bg);
+  padding: 6rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 6rem;
 }
 
-.chefs-section {
+/* Sección Chefs */
+.seccion-chefs {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
+  /* Increased to fit 3 large cards */
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 
-  .chefs-row {
+  .fila-chefs {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    /* Reduced gap slightly */
     flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 3rem;
   }
 
-  .chef-card {
+  .tarjeta-chef {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    width: 250px;
+    gap: 1.5rem;
+    width: 360px;
+    /* Slightly adjusted to ensure fit */
+    background: rgba(255, 255, 255, 0.02);
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    .chef-image-container {
-      width: 180px;
-      height: 180px;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      border-color: rgba(217, 119, 68, 0.3);
+
+      .contenedor-imagen-chef {
+        border-color: var(--orange);
+        transform: scale(1.05);
+      }
+    }
+
+    .contenedor-imagen-chef {
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
-      border: 2px solid #d4af37;
+      border: 2px solid rgba(255, 255, 255, 0.1);
       padding: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: all 0.3s ease;
 
-      .chef-image {
+      .imagen-chef {
         width: 100%;
         height: 100%;
         border-radius: 50%;
         background-color: #333;
         background-size: cover;
         background-position: center;
+        filter: grayscale(20%);
+        transition: filter 0.3s ease;
 
         &.chef-1 {
           background-image: url('assets/img/chef1.png');
@@ -99,96 +131,119 @@
       }
     }
 
-    h3 {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: var(--light);
-      margin-top: 0.5rem;
+    &:hover .imagen-chef {
+      filter: grayscale(0%);
     }
 
-    .social-icons {
+    h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--light);
+      margin-top: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .iconos-sociales {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
 
       img {
-        width: 20px;
-        height: 20px;
-        opacity: 0.7;
-        transition: opacity 0.3s;
+        width: 24px;
+        height: 24px;
+        opacity: 0.6;
+        transition: all 0.3s ease;
         cursor: pointer;
 
         &:hover {
           opacity: 1;
+          transform: scale(1.2);
         }
       }
     }
   }
 }
 
-.waiters-section {
+/* Sección Camareros */
+.seccion-camareros {
   width: 100%;
   max-width: 1200px;
 
-  .waiters-container {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 2rem;
+  .contenedor-camareros {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 
-    .waiters-image {
+    .imagen-camareros {
       width: 100%;
-      height: 300px;
-      background-color: #333;
+      max-width: 800px;
+      height: 500px;
+      background-color: transparent;
       background-image: url('assets/img/teamwork.png');
       background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
-      border-radius: 4px;
+      border-radius: 2px;
     }
 
-    .waiters-content {
+    .contenido-camareros {
+      width: 100%;
       text-align: center;
-      max-width: 800px;
 
       h2 {
         font-family: 'Cinzel', serif;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
         color: var(--light);
         text-transform: uppercase;
+        border-bottom: 1px solid var(--orange);
+        display: inline-block;
+        padding-bottom: 0.5rem;
       }
 
       p {
         font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;
-        line-height: 1.6;
+        font-size: 1.1rem;
+        line-height: 1.8;
         color: rgba(255, 255, 255, 0.8);
         font-weight: 300;
+        max-width: 800px;
+        margin: 0 auto;
       }
     }
   }
 }
 
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .seccion-camareros .contenedor-camareros {
+    padding: 2rem;
+
+    .imagen-camareros {
+      height: 300px;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .team-hero .team-title {
+    
+  .portada-equipo .titulo-equipo {
     font-size: 3rem;
   }
 
-  .chefs-section .chefs-row {
-    padding: 1.5rem;
-    gap: 3rem;
+  .seccion-chefs .fila-chefs {
+    padding: 0;
+    gap: 2rem;
   }
 
-  .waiters-section .waiters-container {
-    padding: 1rem;
-
-    .waiters-image {
-      height: 200px;
-    }
+  .seccion-chefs .tarjeta-chef {
+    width: 100%;
   }
 }

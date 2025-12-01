@@ -1,0 +1,256 @@
+/* Portada Contacto */
+.portada-contacto {
+    height: 50vh;
+    background-image: url('assets/img/hero.png');
+    /* Usando hero.png como predeterminado seguro */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 80px;
+    /* Espacio para cabecera fija */
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo-contacto {
+        font-family: 'Cinzel', serif;
+        font-size: 5rem;
+        color: var(--light);
+        z-index: 1;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+/* Sección Formulario Contacto */
+.seccion-formulario-contacto {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-bg);
+
+    .titulo-formulario {
+        font-family: 'Lato', sans-serif;
+        font-size: 2.5rem;
+        color: var(--light);
+        margin-bottom: 3rem;
+        font-weight: 700;
+    }
+
+    .formulario-reserva {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .grupo-formulario {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .input-formulario {
+                background-color: #0F1D22;
+                /* Tono más oscuro para inputs */
+                border: none;
+                padding: 1.2rem;
+                border-radius: 4px;
+                color: rgba(255, 255, 255, 0.7);
+                font-family: 'Lato', sans-serif;
+                font-size: 0.9rem;
+                outline: none;
+                transition: background-color 0.3s;
+
+                &:focus {
+                    background-color: #15262c;
+                }
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                &.textarea {
+                    resize: none;
+                    height: 120px;
+                }
+            }
+        }
+
+        .fila-formulario {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+
+            .grupo-formulario {
+                flex: 1;
+            }
+        }
+
+        .acciones-formulario {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+
+            .boton-enviar {
+                background-color: var(--orange);
+                color: var(--light);
+                border: none;
+                padding: 0.8rem 2.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                border-radius: 2px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #e88855;
+                }
+            }
+        }
+    }
+}
+
+/* Sección Detalles Contacto */
+.seccion-detalles-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    background-color: var(--dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    flex-wrap: wrap;
+}
+
+.item-detalle-contacto {
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+
+    h3 {
+        font-family: 'Cinzel', serif;
+        color: var(--orange);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'Lato', sans-serif;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+}
+
+/* Sección Reseñas */
+.seccion-resenas {
+    padding: 6rem 2rem;
+    background-color: #0b161a;
+    /* Tono oscuro ligeramente diferente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titulo-seccion {
+        font-family: 'Cinzel', serif;
+        font-size: 2.5rem;
+        color: var(--light);
+        margin-bottom: 4rem;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .contenedor-resenas {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .tarjeta-resena {
+        background: rgba(255, 255, 255, 0.02);
+        padding: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(217, 119, 68, 0.3);
+        }
+
+        .estrellas {
+            color: var(--orange);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .texto-resena {
+            color: rgba(255, 255, 255, 0.9);
+            font-style: italic;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .autor-resena {
+            color: var(--orange);
+            font-weight: 600;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            margin-top: auto;
+            /* Empuja al autor al fondo */
+        }
+    }
+}
+
+/* Sección Mapa */
+.seccion-mapa {
+    width: 100%;
+    height: 400px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .portada-contacto {
+        .titulo-contacto {
+            font-size: 3rem;
+        }
+    }
+
+    .seccion-formulario-contacto {
+        .formulario-reserva {
+            .fila-formulario {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    }
+}

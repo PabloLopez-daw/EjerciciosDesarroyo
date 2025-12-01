@@ -1,0 +1,205 @@
+.portada-menu {
+    height: 50vh;
+    background-image: url('assets/img/hero.png');
+    /* Usando hero.png como predeterminado seguro */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 80px;
+    /* Espacio para cabecera fija */
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo-menu {
+        font-family: 'Cinzel', serif;
+        font-size: 5rem;
+        color: var(--light);
+        z-index: 1;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+.contenedor-contenido-menu {
+    padding: 4rem 2rem;
+    background-color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-tarjetas-menu {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+    .tarjeta-menu {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 3rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--orange);
+            text-align: center;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
+            border-bottom: 1px solid rgba(217, 119, 68, 0.3);
+            padding-bottom: 1rem;
+        }
+
+        .lista-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .nombre-plato {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    color: var(--light);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                .precio-plato {
+                    font-size: 1rem;
+                    color: var(--orange);
+                    font-weight: 600;
+                }
+
+                .desc-plato {
+                    font-size: 0.9rem;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-style: italic;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+.seccion-vinos {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    .imagen-vino {
+        flex: 1;
+        height: 500px;
+        background-image: url('assets/img/Events.png');
+        /* Marcador de posición para imagen de vino */
+        background-size: cover;
+        background-position: center;
+        border-radius: 2px;
+        filter: brightness(0.9);
+    }
+
+    .tarjeta-vino {
+        flex: 1;
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--light);
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .lista-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                .nombre-plato {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: var(--light);
+                    font-family: 'Cinzel', serif;
+                }
+
+                .precio-plato {
+                    font-size: 1rem;
+                    color: var(--orange);
+                    font-weight: 600;
+                    align-self: flex-start;
+                }
+
+                .desc-plato {
+                    font-size: 0.9rem;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .seccion-tarjetas-menu {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .seccion-vinos {
+        flex-direction: column;
+        padding: 2rem;
+
+        .imagen-vino {
+            width: 100%;
+            height: 400px;
+            order: -1;
+            /* Imagen arriba */
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portada-menu .titulo-menu {
+        font-size: 3rem;
+    }
+
+    .contenedor-contenido-menu {
+        padding: 2rem 1rem;
+    }
+
+    .seccion-tarjetas-menu .tarjeta-menu {
+        padding: 1.5rem;
+    }
+}
