@@ -1,7 +1,7 @@
 /* Portada Contacto */
 .portada-contacto {
     height: 50vh;
-    background-image: url('assets/img/hero.png');
+    background-image: url('assets/img/contact.jpg');
     /* Usando hero.png como predeterminado seguro */
     background-size: cover;
     background-position: center;
@@ -133,10 +133,12 @@
     background-color: var(--dark-bg);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     flex-wrap: wrap;
+    text-align: center;
+    /* Centra el texto dentro de cada elemento */
 }
 
 .item-detalle-contacto {
-    text-align: center;
+    /* text-align: center; <-- Ya no es necesario aquí, se hereda del contenedor padre */
     flex: 1;
     min-width: 250px;
 
@@ -227,14 +229,21 @@
 /* Sección Mapa */
 .seccion-mapa {
     width: 100%;
-    height: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
 
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        display: block;
-    }
+.mapa-frame {
+    width: 80%;
+    max-width: 1000px;
+    height: 100%;
+    border: none;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */

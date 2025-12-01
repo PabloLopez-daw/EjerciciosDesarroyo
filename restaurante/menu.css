@@ -1,6 +1,6 @@
 .portada-menu {
     height: 50vh;
-    background-image: url('assets/img/hero.png');
+    background-image: url('assets/img/menu.jpg');
     /* Usando hero.png como predeterminado seguro */
     background-size: cover;
     background-position: center;
@@ -188,7 +188,7 @@
     .imagen-vino {
         flex: 1;
         height: 500px;
-        background-image: url('assets/img/Events.png');
+        background-image: url('assets/img/vinos2.jpg');
         /* Marcador de posición para imagen de vino */
         background-size: cover;
         background-position: center;
